@@ -8,6 +8,9 @@ import { UsersModule } from 'src/users/users.module';
 import { GymsModule } from 'src/gyms/gyms.module';
 import { WodsModule } from 'src/wods/wods.module';
 import { WorkoutRecordsModule } from './workout-records/workout-records.module';
+import { PrRecordsModule } from './pr-records/pr-records.module';
+import { CommentsModule } from './comments/comments.module';
+import { NotificationsModule } from './notifications/notifications.module';
 
 @Module({
   imports: [
@@ -32,6 +35,9 @@ import { WorkoutRecordsModule } from './workout-records/workout-records.module';
     GymsModule,
     WodsModule,
     WorkoutRecordsModule,
+    PrRecordsModule,
+    CommentsModule,
+    NotificationsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
