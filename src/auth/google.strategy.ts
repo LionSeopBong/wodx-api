@@ -33,7 +33,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
     done(null, {
       googleId: id,
       email: emails[0].value,
-      name: `${name.givenName} ${name.familyName}`,
+      name: `${name.givenName}${name.familyName ? ' ' + name.familyName : ''}`,
       photoUrl: photos[0].value,
     });
   }
